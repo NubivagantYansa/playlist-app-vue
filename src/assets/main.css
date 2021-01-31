@@ -3,8 +3,8 @@
 
 /* variables */
 :root {
-  --primary: #4f515a;
-  --secondary: #ebebeb;
+  --primary: #474950;
+  --secondary: #e767a9;
   --warning: #da0f41;
 }
 
@@ -16,7 +16,7 @@
   color: var(--primary);
 }
 body {
-  background: #fafafa;
+  background: #f0a0c9;
 }
 a {
   text-decoration: none;
@@ -36,7 +36,7 @@ button,
 button:hover,
 .btn:hover {
   background: var(--primary);
-  color: white;
+  color: #e767a9;
 }
 button:disabled {
   opacity: 0.5;
