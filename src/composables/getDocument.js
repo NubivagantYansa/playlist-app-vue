@@ -24,6 +24,7 @@ const getDocument = (collection, id) => {
     }
   );
 
+  // unsubscribe from realtime listener
   watchEffect((onInvalidate) => {
     onInvalidate(() => unsub());
   });
