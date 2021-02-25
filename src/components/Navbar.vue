@@ -3,12 +3,18 @@
     <nav>
       <img src="@/assets/music-logo.gif" />
       <h1><router-link :to="{ name: 'Home' }">PlayMusic</router-link></h1>
+
       <div class="links">
         <div v-if="user">
           <span>Ciao {{ user.displayName }}!</span>
+          <router-link :to="{ name: 'UserPlaylists' }"
+            >My Playlists</router-link
+          >
+
           <router-link class="btn" :to="{ name: 'CreatePlaylist' }"
             >Create Playlist</router-link
           >
+
           <button @click="handleClick">Logout</button>
         </div>
         <div v-else>
